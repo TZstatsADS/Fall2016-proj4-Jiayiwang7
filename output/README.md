@@ -189,17 +189,17 @@ Second, fit LDA topic model based on corpus generated.
 
 Below shows 10 topic of a 15 topics model, each of which contains the word distribution.
 
-![image](figs/topic_1.png)
+![image](topic_1.png)
 
 
 ### II. Visualization of Topics
 Below shows 10 topic LDA model
 
-![image](figs/topic_2.png)
+![image](topic_2.png)
 
 Below shows 15 topic LDA model
 
-![image](figs/topic_3.png)
+![image](topic_3.png)
 
 ### III. Reference Code (Python with Gensim)
 ```python
