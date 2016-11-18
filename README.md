@@ -31,9 +31,9 @@ b. Criteria: predictive rank sum  [Code](https://github.com/TZstatsADS/Fall2016-
 
 Result of each method I tried:
 
-| |music feature + topic modeling| music feature for clustering|multi target regression on each word|baseline: sum word frequency for all songs and give same rank according to rank sum
+|music feature + topic modeling| music feature for clustering|multi target regression on each word|baseline: sum word frequency for all songs and give same rank according to rank sum|
 | ------------- |-------------|-----| -----|-----|
-| predictive rank sum (for 150 testing songs)| 0.32 | 0.24| 0.48|0.26
+| predictive rank sum (for 150 testing songs)| 0.32 | 0.24| 0.48|0.26|
 
 Thus, according to the score given above, I chose  music feature for clustering method. In detail, I firstly implement expectation-maximization (EM) algorithm for fitting mixture-of-Gaussian models. Tune the number of Gaussian clusters based on Cross-Validation (Criteria based on predictive rank sum). The best number of cluster is 10. Thus I use 10 clusters. Based on the fact that sometimes using many fancy unsupervised models(k-means, em, topic model) will not increase the accuracy, simply count word frequency of songs in each cluster generated. For each new song, predict which cluster it belongs, and rank word by the cluster word frequency.
 
