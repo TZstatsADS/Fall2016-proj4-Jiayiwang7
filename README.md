@@ -31,7 +31,7 @@ b. Criteria: predictive rank sum  [Code](https://github.com/TZstatsADS/Fall2016-
 
 Result of each method I tried:
 
-|music feature + topic modeling| music feature for clustering|multi target regression on each word|baseline: sum word frequency for all songs and give same rank according to rank sum|
+||music feature + topic modeling| music feature for clustering|multi target regression on each word|baseline: sum word frequency for all songs and give same rank according to rank sum|
 | ------------- |-------------|-----| -----|-----|
 | predictive rank sum (for 150 testing songs)| 0.32 | 0.24| 0.48|0.26|
 
